@@ -1,0 +1,74 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main-header {
+  background-color: #333333;
+  margin-bottom: 20px;
+}
+.main-header .brand {
+  padding: 20px;
+}
+.main-header .brand h1 {
+  color: #f5f5f5;
+  margin: 0;
+  font-weight: 900;
+}
+
+.main-content .main-body {
+  height: 600px;
+  width: 90%;
+  margin: auto;
+}
+.main-content .animations {
+  background: white;
+  height: 100%;
+  border-radius: 10px;
+}
+.main-content .animations #object {
+  border-radius: 50%;
+  background-color: rgb(255, 87, 87);
+  height: 100px;
+  width: 100px;
+  margin-left: 30%;
+  position: relative;
+}
+.main-content .button-container {
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0px;
+}
+.main-content .button-container .button {
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  transition: 0.3s;
+  flex: 1 2;
+  font-weight: 100;
+  width: 100%;
+}
+.main-content .button-container .button:hover {
+  flex-grow: 2;
+}
+.main-content .button-container #toggle.button {
+  background-color: #457b9d;
+}
+.main-content .button-container #triangle.button {
+  background-color: #a8dadc;
+}
+.main-content .button-container #rectangle.button {
+  background-color: #cb997e;
+}

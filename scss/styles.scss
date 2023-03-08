@@ -1,0 +1,90 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main-header {
+    background-color: #333333;
+    margin-bottom: 20px;
+
+    .brand {
+        padding: 20px;
+
+        h1 {
+            color: #f5f5f5;
+            margin: 0;
+            font-weight: 900;
+        }
+
+    }
+
+}
+
+.main-content {
+
+    .main-body {
+        height: 600px;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .animations {
+        background: white;
+        height: 100%;
+        border-radius: 10px;
+
+        #object {
+            border-radius: 50%;
+            background-color: rgb(255, 87, 87);
+            height: 100px;
+            width: 100px;
+            margin-left: 30%;
+            position: relative;
+        }
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        box-shadow: rgb(0, 0, 0, 0.2) 0px 2px 8px;
+        width: 30%;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 10px 0px;
+
+        .button {
+            text-align: center;
+            border: none;
+            font-size: 20px;
+            padding: 10px;
+            transition: 0.3s;
+            flex: 1 2;
+            font-weight: 100;
+            width: 100%;
+
+            &:hover {
+                flex-grow: 2;
+            }
+        }
+
+        #toggle.button {
+            background-color: #457b9d;
+        }
+
+        #triangle.button {
+            background-color: #a8dadc;
+        }
+
+        #rectangle.button {
+            background-color: #cb997e;
+        }
+    }
+}
